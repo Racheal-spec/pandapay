@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(128, 0, 128, 0.513);
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.container{
+ background-color: white;   
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    width: 650px;
+    height: 400px;
+    margin-right: 80px;
+    border-radius: 8px;
+}
+aside{
+    background-color: rgba(128, 128, 128, 0.185);
+    width: 200px;
+    height: 71vh;
+    float: left;
+}
+aside ul{
+    list-style: none;
+  padding: 50px 30px;
+}
+aside h4{
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: indigo;
+}
+aside ul li{
+    padding: 10px 0px;
+    font-weight: bold;
+    display: flex;
+}
+.card a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgba(76, 0, 130, 0.459);
+}
+.scrowpay a{
+    margin-left: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: rgba(76, 0, 130, 0.459);
+}
+.card a:hover{
+color: indigo;
+}
+.scrowpay a:hover{
+    color: indigo;
+}
+.contents ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.contents li{
+    font-weight: bold;
+}
+.contents a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.contents p{
+    padding: 5px;
+    margin-left:25px;
+}
+hr{
+    margin: 0px 10px;
+    border-color: rgba(128, 128, 128, 0.26);
+}
+.failed-trans{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 20px 0;
+}
+.text{
+    color: indigo;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#card-input{
+    width: 220px;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-left: 100px;
+}
+#card-input::placeholder{
+background-image: url("../icon/cardpay.svg");
+background-repeat: no-repeat;
+line-height: normal;
+font-weight: bold;
+}
+
+#scrow-input{
+    width: 220px;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.form-a{
+    color:rgba(128, 128, 128, 0.609);
+    text-decoration: none;
+    margin-left: 120px;
+}
+.form-a:hover{
+    color: indigo;
+}
+.last-link{
+    position: absolute;
+    bottom: 8%;
+    margin-left: 45%;
+    color: white;
+}
+span{
+    font-weight: bold;
+}
