@@ -1,2 +1,2 @@
 # pandapay
-Payment Modal
+Payment Modal(circlepanda)
