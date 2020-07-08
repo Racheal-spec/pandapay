@@ -15,7 +15,7 @@ body{
     left: 25%;
     top: 15%;
     width: 50vw;
-    height:70vh;
+    height: 70vh;
     margin-right: 80px;
     border-radius: 8px;
 }
@@ -51,7 +51,7 @@ aside ul li{
     color: rgba(76, 0, 130, 0.459);
 }
 .card a:hover{
-    color: indigo;
+color: indigo;
 }
 .scrowpay a:hover{
     color: indigo;
@@ -81,73 +81,62 @@ hr{
     margin: 0px 10px;
     border-color: rgba(128, 128, 128, 0.26);
 }
-.payment h4{
+.failed-trans{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 20px 20px;
+}
+.text{
+    width: 70%;
     text-align: center;
-    padding: 25px 0;
     color: indigo;
-    letter-spacing: 0.5px;
+    margin-top: 20px;
+    font-weight: bold;
     font-size: 18px;
 }
-#payment-input{
-    background-image: url("../icon/mastercard.svg");
+#card-input{
+    background-image: url("../icon/cardpay.svg");
     background-repeat: no-repeat;
-    background-position: right;
-    width: 350px;
-    padding: 14px 0;
-    border-radius: 4px;
-    margin-left: 50px;
-    border: 2px solid rgba(128, 128, 128, 0.322);
-}
-form li{
-    list-style: none;
-    padding-top: 20px;
-}
-#Expiry{
-    width: 26%;
-    padding: 14px 0;
-    border-radius: 4px;
-    margin-left: 48px;
-}
-#cvv{
-    width: 26%;
-    padding: 14px 0;
-    border-radius: 4px;
-    margin-left: 12px;
-}
-#Expiry, #cvv{
-    padding-left: 20px;
-    border: 2px solid rgba(128, 128, 128, 0.322);
-}
-.Btn-class{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: end;
-    margin-top: 25px;
-    margin-right: 25px;
-}
-.Btn-class .cancel a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-right: 10px;
-}
-.btn{
-    background-color: #33CC33;
-    width: 120px;
+    background-position: 20px;
+    width: 240px;
     padding: 10px 0;
-    cursor: pointer;
     border-radius: 8px;
-    border: none;
+    margin-left: 110px;
+    padding-left: 60px;
+    border: 2px solid rgba(128, 128, 128, 0.322);
+}
+#card-input::placeholder{
+font-weight: bold;
+color: grey;
+}
+
+#scrow-input{
+    background-image: url("../icon/scrowpay.svg");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    width: 240px;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-left: 110px;
+    padding-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(128, 128, 128, 0.322);
+}
+#scrow-input::placeholder{
     font-weight: bold;
-    text-align: center;
-}
-.btn a{
-    color: white;
+    color: grey;
+    }
+.form-a{
+    color:rgba(128, 128, 128, 0.609);
     text-decoration: none;
+    margin-left: 135px;
+    letter-spacing: 0.5px;
 }
-.btn:hover{
-    background-color: green;
+.form-a:hover{
+    color: indigo;
 }
 .last-link{
     position: absolute;
@@ -158,6 +147,7 @@ form li{
 span{
     font-weight: bold;
 }
+
 
 @media screen and (max-width: 768px){
     body{
@@ -178,34 +168,40 @@ span{
         height: 70vh;
         float: left;
     }
-    .card a:hover{
-        color: indigo;
+    .text{
+        margin-top: 5px;
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
     }
-    .scrowpay a:hover{
-        color: indigo;
-    }
-       #payment-input{
+    .failed-trans{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0px;
+        }
+    #card-input{
+        background-position: 20px;
         width: 180px;
-        padding: 14px 0;
-        margin-left: 18px;
+        margin-left: 20px;
+        padding-left: 60px;
+        margin-top: 20px;
     }
-    #Expiry{
-        width: 24%;
-        padding: 14px 0;
-        margin-left:20px;
+    #scrow-input{
+        background-position: 20px;
+        width: 180px;
+        margin-left: 20px;
+     
     }
-    #cvv{
-        width: 24%;
-        padding: 14px 0;
-        margin-left: 3px;
-    }
-    .Btn-class{
-        margin-right: 16px;
+    .form-a{
+        margin-top: 10px;
+        margin-left: 10px;
+        letter-spacing: 0.5px;
     }
     .last-link{
-     position: absolute;
-     bottom: -80%;
-     margin-left: 120px;
-    }
-    
+        position: absolute;
+        bottom: -80%;
+        margin-left: 120px;
+       }
 }

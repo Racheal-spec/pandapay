@@ -15,7 +15,7 @@ body{
     left: 25%;
     top: 15%;
     width: 50vw;
-    height:70vh;
+    height: 70vh;
     margin-right: 80px;
     border-radius: 8px;
 }
@@ -51,7 +51,7 @@ aside ul li{
     color: rgba(76, 0, 130, 0.459);
 }
 .card a:hover{
-    color: indigo;
+color: indigo;
 }
 .scrowpay a:hover{
     color: indigo;
@@ -81,42 +81,41 @@ hr{
     margin: 0px 10px;
     border-color: rgba(128, 128, 128, 0.26);
 }
-.payment h4{
-    text-align: center;
-    padding: 25px 0;
+.otp-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: indigo;
-    letter-spacing: 0.5px;
-    font-size: 18px;
 }
-#payment-input{
-    background-image: url("../icon/mastercard.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 350px;
-    padding: 14px 0;
-    border-radius: 4px;
-    margin-left: 50px;
+.otp-header h5{
+    margin-bottom: 20px;
+}
+.text{
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#Number-input{
+    width: 50px;
+    padding: 16px;
+    margin: 0 15px;
+    margin-bottom: 12px;
     border: 2px solid rgba(128, 128, 128, 0.322);
-}
-form li{
-    list-style: none;
-    padding-top: 20px;
-}
-#Expiry{
-    width: 26%;
-    padding: 14px 0;
     border-radius: 4px;
-    margin-left: 48px;
 }
-#cvv{
-    width: 26%;
-    padding: 14px 0;
-    border-radius: 4px;
-    margin-left: 12px;
+.form-a{
+    color:indigo;
+    text-decoration: none;
+    margin-left: 50%;
+    font-weight: bold;
 }
-#Expiry, #cvv{
-    padding-left: 20px;
-    border: 2px solid rgba(128, 128, 128, 0.322);
+.form-a:hover{
+    color: indigo;
 }
 .Btn-class{
     display: flex;
@@ -178,34 +177,34 @@ span{
         height: 70vh;
         float: left;
     }
-    .card a:hover{
+    .otp-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: indigo;
     }
-    .scrowpay a:hover{
-        color: indigo;
+    .otp-header h5{
+        margin-bottom: 20px;
+    } 
+    .text{
+        width: 80%;
+        text-align: center;
+        padding: 20px 0;
+        font-weight: bold;
+        font-size: 15px;
+    }   
+    #Number-input{
+        width: 35px;
+        padding: 6px;
+        margin-bottom: 12px;
     }
-       #payment-input{
-        width: 180px;
-        padding: 14px 0;
-        margin-left: 18px;
-    }
-    #Expiry{
-        width: 24%;
-        padding: 14px 0;
-        margin-left:20px;
-    }
-    #cvv{
-        width: 24%;
-        padding: 14px 0;
-        margin-left: 3px;
-    }
-    .Btn-class{
-        margin-right: 16px;
+    .form-a{
+        margin-left: 30%;
     }
     .last-link{
-     position: absolute;
-     bottom: -80%;
-     margin-left: 120px;
-    }
-    
+        position: absolute;
+        bottom: -80%;
+        margin-left: 120px;
+       }
 }
